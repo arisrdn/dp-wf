@@ -1,0 +1,222 @@
+/* svg {
+	border: 1px solid black;
+	height: 250px;
+	width: 250px;
+} */
+
+.pizza {
+	fill: #ffb86d;
+	/* stroke: rgb(0, 0, 0);
+    stroke-width: 3; */
+	transform-origin: right bottom;
+	transform-box: fill-box;
+}
+
+.cheese {
+	fill: #fcf764;
+	/* stroke-width: 3;
+    stroke: black; */
+	transform-origin: right bottom;
+	transform-box: fill-box;
+}
+
+.pepperoni {
+	fill: #f15a46;
+	/* stroke-width: 5;
+    stroke: #601107; */
+}
+
+.slice2,
+.cheese2 {
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.slice3,
+.cheese3 {
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+.slice4,
+.cheese4 {
+	-webkit-transform: rotate(135deg);
+	-moz-transform: rotate(135deg);
+	-ms-transform: rotate(135deg);
+	-o-transform: rotate(135deg);
+	transform: rotate(135deg);
+}
+
+.slice5,
+.cheese5 {
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+
+.slice6,
+.cheese6 {
+	-webkit-transform: rotate(225deg);
+	-moz-transform: rotate(225deg);
+	-ms-transform: rotate(225deg);
+	-o-transform: rotate(225deg);
+	transform: rotate(225deg);
+}
+
+.slice7,
+.cheese7 {
+	-webkit-transform: rotate(270deg);
+	-moz-transform: rotate(270deg);
+	-ms-transform: rotate(270deg);
+	-o-transform: rotate(270deg);
+	transform: rotate(270deg);
+}
+
+.slice8,
+.cheese8 {
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+.part1 {
+	animation: loader 4s ease-in-out forwards infinite;
+	opacity: 1;
+}
+
+.part2 {
+	animation: loader 4s ease-in-out forwards 0.25s infinite;
+	opacity: 1;
+}
+
+.part3 {
+	animation: loader 4s ease-in-out forwards 0.5s infinite;
+	opacity: 1;
+}
+
+.part4 {
+	animation: loader 4s ease-in-out forwards 0.75s infinite;
+	opacity: 1;
+}
+
+.part5 {
+	animation: loader 4s ease-in-out forwards 1s infinite;
+	opacity: 1;
+}
+
+.part6 {
+	animation: loader 4s ease-in-out forwards 1.25s infinite;
+	opacity: 1;
+}
+
+.part7 {
+	animation: loader 4s ease-in-out forwards 1.5s infinite;
+	opacity: 1;
+}
+
+.part8 {
+	animation: loader 4s ease-in-out forwards 1.75s infinite;
+	opacity: 1;
+}
+
+@keyframes loader {
+	0% {
+		opacity: 1;
+	}
+	49% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+	99% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@import url(https://fonts.googleapis.com/css?family=Quattrocento+Sans);
+
+.loading-text {
+	position: absolute;
+	top: 210px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	text-align: center;
+	width: 100%;
+	height: 100px;
+	line-height: 100px;
+}
+.loading-text span {
+	display: inline-block;
+	margin: 0 5px;
+	color: rgb(0, 0, 0);
+	font-family: "Quattrocento Sans", sans-serif;
+}
+.loading-text span:nth-child(1) {
+	filter: blur(0px);
+	-webkit-animation: blur-text 1.5s 0s infinite linear alternate;
+	animation: blur-text 1.5s 0s infinite linear alternate;
+}
+.loading-text span:nth-child(2) {
+	filter: blur(0px);
+	-webkit-animation: blur-text 1.5s 0.2s infinite linear alternate;
+	animation: blur-text 1.5s 0.2s infinite linear alternate;
+}
+.loading-text span:nth-child(3) {
+	filter: blur(0px);
+	-webkit-animation: blur-text 1.5s 0.4s infinite linear alternate;
+	animation: blur-text 1.5s 0.4s infinite linear alternate;
+}
+.loading-text span:nth-child(4) {
+	filter: blur(0px);
+	-webkit-animation: blur-text 1.5s 0.6s infinite linear alternate;
+	animation: blur-text 1.5s 0.6s infinite linear alternate;
+}
+.loading-text span:nth-child(5) {
+	filter: blur(0px);
+	-webkit-animation: blur-text 1.5s 0.8s infinite linear alternate;
+	animation: blur-text 1.5s 0.8s infinite linear alternate;
+}
+.loading-text span:nth-child(6) {
+	filter: blur(0px);
+	-webkit-animation: blur-text 1.5s 1s infinite linear alternate;
+	animation: blur-text 1.5s 1s infinite linear alternate;
+}
+.loading-text span:nth-child(7) {
+	filter: blur(0px);
+	-webkit-animation: blur-text 1.5s 1.2s infinite linear alternate;
+	animation: blur-text 1.5s 1.2s infinite linear alternate;
+}
+
+@-webkit-keyframes blur-text {
+	0% {
+		filter: blur(0px);
+	}
+	100% {
+		filter: blur(4px);
+	}
+}
+
+@keyframes blur-text {
+	0% {
+		filter: blur(0px);
+	}
+	100% {
+		filter: blur(4px);
+	}
+}
